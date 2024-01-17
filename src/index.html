@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/meta/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+    <link rel="stylesheet" href="/styles/base.scss" />
+    <link rel="stylesheet" href="/index.scss" />
+    <script src="/index.ts" type="module" defer></script>
+  </head>
+  <body>
+    <div class="div1" data-webgl></div>
+    <section data-webgl></section>
+    <style>
+      [data-webgl] {
+        background: green;
+        opacity: 0.3;
+      }
+      div {
+        margin-left: 100px;
+        margin-top: 100px;
+        width: 100px;
+        height: 100px;
+        /* background: green; */
+      }
+      section {
+        margin-left: 300px;
+        margin-top: 50px;
+        width: 200px;
+        height: 100px;
+      }
+      img {
+        position: absolute;
+        right: 100px;
+        width: 300px;
+        top: 10px;
+      }
+
+      body {
+        height: 200vh;
+      }
+    </style>
+    <canvas id="canvas"></canvas>
+  </body>
+</html>
